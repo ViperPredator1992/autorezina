@@ -1,0 +1,107 @@
+.header
+    &-top
+        .container
+            min-height: 120px
+            justify-content: space-between
+    &-bottom
+        background-color: #032843
+.nav
+    &-list
+        margin: 0
+        padding: 0
+        list-style: none  
+        min-height: 45px    
+        &__item
+            margin-right: 60px
+            &:last-child
+                margin-right: 0
+        &__link
+            font-size: 24px
+            color: #f9f9f9
+            font-weight: bold     
+            text-transform: uppercase 
+.logo
+    &__image
+        width: 140px
+.search
+    position: relative
+    max-width: 347px
+    width: 100%
+    &__input
+        border-radius: 10px
+        border: 1px solid #cccccc
+        background-color: #f6f6f6
+        height: 27px
+        padding: 0 47px 0 21px
+        &::placeholder
+            color: #a9a9a9
+            font-size: 14px
+    &__button
+        width: 47px
+        border-radius: 0 10px 10px 0
+        position: absolute
+        top: 0
+        right: 0
+        height: 27px
+        border: none
+        background-color: #009bd6
+        &::before
+            content: url(../img/search.png)
+            display: inline-block
+            vertical-align: middle
+.phone
+    font-weight: bold
+    color: #232323
+    &--kievstar   
+        &::before
+            content: url(../img/kievstar.png)
+            display: inline-block
+            margin-right: 10px
+    &--vodafone
+        margin: 6px 0
+        &::before
+            content: url(../img/vodafone.png)
+            display: inline-block
+            margin-right: 10px
+    &--life
+        &::before
+            content: url(../img/life.png)
+            display: inline-block
+            margin-right: 10px
+.buttons
+    &-top
+        margin-bottom: 8px
+        &__link
+            display: inline-block
+            margin-right: 10px            
+    &-bottom
+        &__btn
+            font-size: $body-size + 2px
+            padding: 0
+            background-color: transparent
+            border: none
+            display: block
+            border-bottom: 1px solid #06273f
+            color: #06273f
+            position: relative
+            &:first-child
+                margin-bottom: 4px
+                &::before
+                    content: url(../img/write.png)
+                    position: absolute
+                    left: -20px
+                    top: 0 
+            &:last-child
+                &::before
+                    content: url(../img/callback.png)
+                    position: absolute
+                    left: -20px
+                    top: 0         
+.cart
+    font-size: $body-size + 2px
+    color: #787878
+    &::before
+        content: url(../img/cart.png)   
+        display: inline-block
+        vertical-align: sub
+        margin-right: 13px                 
