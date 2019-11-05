@@ -33,8 +33,8 @@
                         </a>
                     </div>
                     <div class="buttons-bottom">
-                        <button class="buttons-bottom__btn">Напишите нам</button>
-                        <button class="buttons-bottom__btn">Обратный звонок</button>
+                        <button class="buttons-bottom__btn buttons-popup">Напишите нам</button>
+                        <button class="buttons-bottom__btn buttons-popup-call">Обратный звонок</button>
                     </div>
                 </div>
                 <a href="#" class="cart">Пусто</a>
@@ -67,115 +67,151 @@
             </div>
         </div>
     </header>
-    <section class="banner">
-        <div class="container">
-            <div class="banner-slide">
-                <div class="banner-slide__item">
-                    <img src="./img/banner.jpg" alt="" class="banner-slide__image">
-                </div>
-                <div class="banner-slide__item">
-                    <img src="./img/banner.jpg" alt="" class="banner-slide__image">
-                </div>
-                <div class="banner-slide__item">
-                    <img src="./img/banner.jpg" alt="" class="banner-slide__image">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="main-filter">
-        <div class="container">
-            
-        </div>
-    </section>
-    <section class="hits">
-        <div class="container">
-            <h1 class="hits__title">Хиты продаж</h1>
-            <div class="hits-blocks flex">
-                <div class="hits-block">
-                    <a href="#" class="hits-block__link">
-                        <h2 class="hits-block__title">LAUFENN I-Fit Ice LW71</h2>
-                        <p class="hits-block__size">(175/65 R14 86T XL)</p>
-                        <div class="hits-block__image">
-                            <img src="./img/product.png" alt="product">
-                        </div>
-                    </a>
-                    <strong class="hits-block__price">1 200 <span>грн</span></strong>
-                    <button class="hits-block__cart">Купить</button>
-                </div>
-                <div class="hits-block">
-                    <a href="#" class="hits-block__link">
-                        <h2 class="hits-block__title">LAUFENN I-Fit Ice LW71</h2>
-                        <p class="hits-block__size">(175/65 R14 86T XL)</p>
-                        <div class="hits-block__image">
-                            <img src="./img/product.png" alt="product">
-                        </div>
-                    </a>
-                    <strong class="hits-block__price">1 200 <span>грн</span></strong>
-                    <button class="hits-block__cart">Купить</button>
-                </div>
-                <div class="hits-block">
-                    <a href="#" class="hits-block__link">
-                        <h2 class="hits-block__title">LAUFENN I-Fit Ice LW71</h2>
-                        <p class="hits-block__size">(175/65 R14 86T XL)</p>
-                        <div class="hits-block__image">
-                            <img src="./img/product.png" alt="product">
-                        </div>
-                    </a>
-                    <strong class="hits-block__price">1 200 <span>грн</span></strong>
-                    <button class="hits-block__cart">Купить</button>
-                </div>
-                <div class="hits-block">
-                    <a href="#" class="hits-block__link">
-                        <h2 class="hits-block__title">LAUFENN I-Fit Ice LW71</h2>
-                        <p class="hits-block__size">(175/65 R14 86T XL)</p>
-                        <div class="hits-block__image">
-                            <img src="./img/product.png" alt="product">
-                        </div>
-                    </a>
-                    <strong class="hits-block__price">1 200 <span>грн</span></strong>
-                    <button class="hits-block__cart">Купить</button>
+    <main>
+        <section class="banner">
+            <div class="container">
+                <div class="banner-slide">
+                    <div class="banner-slide__item">
+                        <img src="./img/banner.jpg" alt="" class="banner-slide__image">
+                    </div>
+                    <div class="banner-slide__item">
+                        <img src="./img/banner.jpg" alt="" class="banner-slide__image">
+                    </div>
+                    <div class="banner-slide__item">
+                        <img src="./img/banner.jpg" alt="" class="banner-slide__image">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="articles">
-        <div class="container">
-            <h3 class="articles__title">Полезные статьи</h3>
-            <div class="articles-blocks flex">
-                <div class="articles-block">
-                    <a href="#" class="articles-block__link">
-                        <img src="./img/blog1.jpg" alt="blog1" class="articles-block__image">
-                        <p class="articles-block__text">Как правильно покупать шины статья-№2</p>
-                    </a>
+        </section>
+        <section class="main-filter">
+            <div class="container">
+                <div class="tabs flex">
+                    <a href="#" class="tab tab-active">По параметрам</a>
+                    <a href="#" class="tab">По марке авто</a>
+                    <a href="#" class="tab">Диски</a>
                 </div>
-                <div class="articles-block">
-                    <a href="#" class="articles-block__link">
-                        <img src="./img/blog2.jpg" alt="blog2" class="articles-block__image">
-                        <p class="articles-block__text">11 правил как выбрать б/у шины</p>
-                    </a>
+                <div class="filter-blocks flex">
+                    <div class="filter-block">
+                        <span class="filter-block__name">ШИРИНА</span>
+                        <div class="filter-block__select">
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-block">
+                        <span class="filter-block__name">ВЫСОТА</span>
+                        <div class="filter-block__select">
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-block">
+                        <span class="filter-block__name">ДИАМЕТР</span>
+                        <div class="filter-block__select">
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-                <div class="articles-block">
-                    <a href="#" class="articles-block__link">
-                        <img src="./img/blog3.jpg" alt="blog3" class="articles-block__image">
-                        <p class="articles-block__text">Как правильно покупать шины</p>
-                    </a>
+                <button class="main-filter__choose">ПОДОБРАТЬ</button>
+            </div>
+        </section>
+        <section class="hits">
+            <div class="container">
+                <h1 class="hits__title">Хиты продаж</h1>
+                <div class="hits-blocks flex">
+                    <div class="hits-block">
+                        <a href="#" class="hits-block__link">
+                            <h2 class="hits-block__title">LAUFENN I-Fit Ice LW71</h2>
+                            <p class="hits-block__size">(175/65 R14 86T XL)</p>
+                            <div class="hits-block__image">
+                                <img src="./img/product.png" alt="product">
+                            </div>
+                        </a>
+                        <strong class="hits-block__price">1 200 <span>грн</span></strong>
+                        <button class="hits-block__cart">Купить</button>
+                    </div>
+                    <div class="hits-block">
+                        <a href="#" class="hits-block__link">
+                            <h2 class="hits-block__title">LAUFENN I-Fit Ice LW71</h2>
+                            <p class="hits-block__size">(175/65 R14 86T XL)</p>
+                            <div class="hits-block__image">
+                                <img src="./img/product.png" alt="product">
+                            </div>
+                        </a>
+                        <strong class="hits-block__price">1 200 <span>грн</span></strong>
+                        <button class="hits-block__cart">Купить</button>
+                    </div>
+                    <div class="hits-block">
+                        <a href="#" class="hits-block__link">
+                            <h2 class="hits-block__title">LAUFENN I-Fit Ice LW71</h2>
+                            <p class="hits-block__size">(175/65 R14 86T XL)</p>
+                            <div class="hits-block__image">
+                                <img src="./img/product.png" alt="product">
+                            </div>
+                        </a>
+                        <strong class="hits-block__price">1 200 <span>грн</span></strong>
+                        <button class="hits-block__cart">Купить</button>
+                    </div>
+                    <div class="hits-block">
+                        <a href="#" class="hits-block__link">
+                            <h2 class="hits-block__title">LAUFENN I-Fit Ice LW71</h2>
+                            <p class="hits-block__size">(175/65 R14 86T XL)</p>
+                            <div class="hits-block__image">
+                                <img src="./img/product.png" alt="product">
+                            </div>
+                        </a>
+                        <strong class="hits-block__price">1 200 <span>грн</span></strong>
+                        <button class="hits-block__cart">Купить</button>
+                    </div>
                 </div>
             </div>
-            <a href="#" class="articles__link">Больше статей</a>
-        </div>
-    </section>
-    <section class="description">
-        <div class="container">
-            <h2 class="description__title">Купить шины летние, подобрать резину зимнюю можно легко на Autorezina.kh.ua</h2>
-            <p>На нашем сайте у вас есть уникальная возможность купить шины по оптовым ценам. Наши специалисты помогут в телефонном режиме подобрать резину для вашего автомобиля, помогут купить колеса, 
-                    которые обеспечат Вам комфортную и безопасную езду на наших дорогах.</p>
-            <p>Большой опыт работы нашей команды, а также широкий выбор шин, таких марок: Nokian, Continental, Michelin, GoodYear, Dunlop, Hankook, Yokogamma, Bridgestone, Pirelli, Toyo, а также отечественные 
-                    шины: Premiorri, Сordiant, Belshina - удовлетворит вкус, даже самого изысканного клиента.</p>
-            <p>Наши постоянные покупатели, которые хотят купить летнюю или купить зимнюю шину, могут рассчитывать на гибкую систему скидок. Вы можете заказать резину в Харькове или в любом другом городе так, 
-                    как доставка по всей Украине любым перевозчиком, сделает покупку быстрой и удобной. Гарантия представлена на все виды шин, на любой заводской дефект. Так же мы будем рады принять возражения и 
-                    пожелания в наш адрес. Спасибо что посетили наш сайт, надеемся, мы смогли вам помочь. Приятных покупок.</p>
-        </div>
-    </section>
+        </section>
+        <section class="articles">
+            <div class="container">
+                <h3 class="articles__title">Полезные статьи</h3>
+                <div class="articles-blocks flex">
+                    <div class="articles-block">
+                        <a href="#" class="articles-block__link">
+                            <img src="./img/blog1.jpg" alt="blog1" class="articles-block__image">
+                            <p class="articles-block__text">Как правильно покупать шины статья-№2</p>
+                        </a>
+                    </div>
+                    <div class="articles-block">
+                        <a href="#" class="articles-block__link">
+                            <img src="./img/blog2.jpg" alt="blog2" class="articles-block__image">
+                            <p class="articles-block__text">11 правил как выбрать б/у шины</p>
+                        </a>
+                    </div>
+                    <div class="articles-block">
+                        <a href="#" class="articles-block__link">
+                            <img src="./img/blog3.jpg" alt="blog3" class="articles-block__image">
+                            <p class="articles-block__text">Как правильно покупать шины</p>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="articles__link">Больше статей</a>
+            </div>
+        </section>
+        <section class="description">
+            <div class="container">
+                <h2 class="description__title">Купить шины летние, подобрать резину зимнюю можно легко на Autorezina.kh.ua</h2>
+                <p>На нашем сайте у вас есть уникальная возможность купить шины по оптовым ценам. Наши специалисты помогут в телефонном режиме подобрать резину для вашего автомобиля, помогут купить колеса, 
+                        которые обеспечат Вам комфортную и безопасную езду на наших дорогах.</p>
+                <p>Большой опыт работы нашей команды, а также широкий выбор шин, таких марок: Nokian, Continental, Michelin, GoodYear, Dunlop, Hankook, Yokogamma, Bridgestone, Pirelli, Toyo, а также отечественные 
+                        шины: Premiorri, Сordiant, Belshina - удовлетворит вкус, даже самого изысканного клиента.</p>
+                <p>Наши постоянные покупатели, которые хотят купить летнюю или купить зимнюю шину, могут рассчитывать на гибкую систему скидок. Вы можете заказать резину в Харькове или в любом другом городе так, 
+                        как доставка по всей Украине любым перевозчиком, сделает покупку быстрой и удобной. Гарантия представлена на все виды шин, на любой заводской дефект. Так же мы будем рады принять возражения и 
+                        пожелания в наш адрес. Спасибо что посетили наш сайт, надеемся, мы смогли вам помочь. Приятных покупок.</p>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         <div class="container flex">
             <div class="footer-phones">
@@ -230,6 +266,28 @@
             </div>
         </div>
     </footer>
+
+    <div class="mask"></div>
+    <div class="popup">
+        <button class="popup__close">&times;</button>
+        <h6 class="popup__title">Напишите нам</h6>
+        <form action="#" method="post" class="popup-form flex">
+            <input type="text" name="user_name" placeholder="Ваше имя" class="popup-form__input input" required>
+            <input type="tel" name="user_phone" placeholder="Ваш телефон" class="popup-form__input input" required>
+            <textarea name="user_text" placeholder="Сообщение" class="popup-form__textarea" required></textarea>
+            <button type="submit" class="popup-form__button">Отправить</button>
+        </form>
+    </div>
+    <div class="popup-call">
+        <button class="popup-call__close">&times;</button>
+        <h6 class="popup-call__title">Обратный звонок</h6>
+        <form action="#" method="post" class="popup-call-form flex">
+            <input type="text" name="user_name" placeholder="Ваше имя" class="popup-call-form__input input" required>
+            <input type="tel" name="user_phone" placeholder="Ваш телефон" class="popup-call-form__input input" required>
+            <textarea name="user_text" placeholder="Вопрос" class="popup-call-form__textarea" required></textarea>
+            <button type="submit" class="popup-call-form__button">Отправить</button>
+        </form>
+    </div>
 
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="./js/script.js"></script>

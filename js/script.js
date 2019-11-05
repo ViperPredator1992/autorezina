@@ -8,6 +8,22 @@ $(document).ready(function () {
         dots: true
     });
 
+    $('.buttons-popup').click(function () {
+        $('.mask').addClass('mask-active');
+        $('.popup').addClass('popup-active');
+    });
+
+    $('.buttons-popup-call').click(function () {
+        $('.mask').addClass('mask-active');
+        $('.popup-call').addClass('popup-call-active');
+    });
+
+    $('.mask, .popup__close, .popup-call__close').click(function () {
+        $('.mask').removeClass('mask-active');
+        $('.popup').removeClass('popup-active');
+        $('.popup-call').removeClass('popup-call-active');
+    });
+
     // document.addEventListener('contextmenu', event => event.preventDefault());
 
     // document.onkeypress = function (event) {
