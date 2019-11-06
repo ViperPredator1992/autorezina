@@ -24,6 +24,17 @@ $(document).ready(function () {
         $('.popup-call').removeClass('popup-call-active');
     });
 
+    $(".menu-block").click(function(){
+        if($(this).next(".nav").css("display")=="none") {
+            $(this).next(".nav").slideDown();
+            $(".burger").addClass("burger-open");
+        }
+        else {
+            $(".burger").removeClass("burger-open");
+            $(this).next(".nav").slideUp();
+        }
+    });
+
     // document.addEventListener('contextmenu', event => event.preventDefault());
 
     // document.onkeypress = function (event) {
