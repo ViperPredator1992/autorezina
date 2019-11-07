@@ -13,15 +13,21 @@ $(document).ready(function () {
         $('.popup').addClass('popup-active');
     });
 
+    $('.hits-block__cart, .catalog-block__cart').click(function () {
+        $('.mask').addClass('mask-active');
+        $('.modal').addClass('modal-active');
+    });
+
     $('.buttons-popup-call').click(function () {
         $('.mask').addClass('mask-active');
         $('.popup-call').addClass('popup-call-active');
     });
 
-    $('.mask, .popup__close, .popup-call__close').click(function () {
+    $('.mask, .popup__close, .popup-call__close, .modal__close').click(function () {
         $('.mask').removeClass('mask-active');
         $('.popup').removeClass('popup-active');
         $('.popup-call').removeClass('popup-call-active');
+        $('.modal').removeClass('modal-active');
     });
 
     $(".menu-block").click(function(){

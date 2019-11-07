@@ -4,6 +4,11 @@
             max-width: 920px
     .container
         max-width: 860px
+    .catalog 
+        .container
+            max-width: 890px
+        &-left
+            margin: 0 auto 30px
     .search
         max-width: 215px
         &__button
@@ -53,7 +58,17 @@
         .container
             max-width: 768px
     .container
-        max-width: 680px  
+        max-width: 680px 
+    .catalog 
+        .container
+            max-width: 680px
+        &-block
+            max-width: 48%
+            margin: 0 6px 15px
+            &s 
+                justify-content: flex-start
+        &-streamline
+            margin-left: 6px
     .block
         &-left
             width: 37%
@@ -170,7 +185,18 @@
             max-width: 370px
         &-phones,
         &-blocks
-            margin-bottom: 30px     
+            margin-bottom: 30px   
+    .breadcrumbs
+        display: none
+    .catalog
+        .container
+            max-width: 420px  
+        &-block
+            max-width: 80%
+            margin: 0 auto 20px
+        &-streamline
+            margin-left: 0
+            text-align: center            
 @media (max-width: 425px)
     .menu
         font-size: 18px
@@ -178,8 +204,6 @@
     .container
         max-width: 375px
         padding: 0 8px
-    .mask
-        width: 110%
     .footer 
         .container
             flex-direction: column
@@ -200,3 +224,7 @@
             &s
                 &__days
                     max-width: 200px
+@media (max-width: 380px)
+    .catalog 
+        &-block
+            max-width: 85%                    
