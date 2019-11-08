@@ -43,13 +43,13 @@ $(document).ready(function () {
 
     $('.product-tab').not('.product-tab-active').click(function () {
         var index = $(this).index();
-        var content = $('.tabs').eq(index);
+        var content = $('.inner-tabs').eq(index);
         $(this).addClass('product-tab-active').siblings().removeClass('product-tab-active');
-        $('.tabs').css('display', 'none').eq(index).css('display', 'block');
+        $('.inner-tabs').css('display', 'none').eq(index).css('display', 'block');
     });
 
     $('.product-tab:first').addClass('product-tab-active');
-    $('.tabs:first').css('display', 'block');
+    $('.inner-tabs:first').css('display', 'block');
 
     // document.addEventListener('contextmenu', event => event.preventDefault());
 

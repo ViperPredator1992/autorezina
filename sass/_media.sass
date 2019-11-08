@@ -72,7 +72,10 @@
             &__item
                 font-size: 16px        
     .characteristics
-        padding: 15px 20px     
+        padding: 15px 20px 
+    .news
+        &-block
+            max-width: 45%        
 @media (max-width: 880px)
     .menu-block
         display: block
@@ -147,6 +150,9 @@
             max-width: 270px
             &:last-child
                 margin-bottom: 0
+    .news
+        &-block
+            max-width: 48%
 @media (max-width: 820px)
     .product
         .container 
@@ -171,18 +177,19 @@
             &__cart
                 margin: 0 auto 15px
                 display: block   
-    .tabs
-        padding: 30px 15px 0
-        &-video
-            flex-direction: column
-            align-items: center
-            iframe
-                width: 100% 
-        &__title 
-            font-size: 24px
-            margin: 0 0 20px
-        p
-            margin: 0 0 15px           
+    .inner
+        &-tabs
+            padding: 30px 15px 0
+            &__video
+                flex-direction: column
+                align-items: center
+                iframe
+                    width: 100% 
+            &__title 
+                font-size: 24px
+                margin: 0 0 20px
+            p
+                margin: 0 0 15px           
 @media (max-width: 680px)
     .container
         max-width: 425px
@@ -254,7 +261,23 @@
             margin: 0 auto 20px
         &-streamline
             margin-left: 0
-            text-align: center            
+            text-align: center  
+    .news
+        &-block
+            max-width: 85%
+            margin: 0 auto 20px
+    .news-inner
+        &__title
+            margin: 0 0 15px 0
+            font-size: 24px
+        &__date
+            margin: 0 0 15px 0
+        &__image
+            margin: 0 auto 15px 
+        &__blocks
+            p
+                font-size: 16px
+                line-height: normal                             
 @media (max-width: 425px)
     .menu
         font-size: 18px
@@ -296,11 +319,12 @@
         &-tab
             padding: 10px 8px
             font-size: 14px
-    .tabs
-        padding: 20px 0 0
-        &__title
-            font-size: 20px
-            margin: 0 0 12px
+    .inner
+        &-tabs
+            padding: 20px 0 0
+            &__title
+                font-size: 20px
+                margin: 0 0 12px
 @media (max-width: 380px)
     .catalog 
         &-block
@@ -308,4 +332,15 @@
     .product
         &-left
             max-width: 200px
-            padding: 15px 20px                           
+            padding: 15px 20px   
+    .news
+        &-block
+            max-width: 90%
+            &__title
+                font-size: 20px
+                height: 56px
+                overflow: hidden  
+            &__inside
+                margin: 10px auto 15px
+            &__date
+                text-align: center                              
