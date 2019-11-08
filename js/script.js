@@ -13,7 +13,7 @@ $(document).ready(function () {
         $('.popup').addClass('popup-active');
     });
 
-    $('.hits-block__cart, .catalog-block__cart').click(function () {
+    $('.hits-block__cart, .catalog-block__cart, .product-right__cart').click(function () {
         $('.mask').addClass('mask-active');
         $('.modal').addClass('modal-active');
     });
